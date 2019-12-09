@@ -1,25 +1,25 @@
 <html>
     <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-</head> 
+    </head> 
     <body>
-<style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
-		font-family: "Salesforce Sans", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
-	}
-	@font-face {
+        <style type='text/css'>
+	    .embeddedServiceHelpButton .helpButton .uiButton {
+		    background-color: #005290;
+		    font-family: "Salesforce Sans", sans-serif;
+	    }
+	    .embeddedServiceHelpButton .helpButton .uiButton:focus {
+		    outline: 1px solid #005290;
+	    }
+	    @font-face {
 		font-family: 'Salesforce Sans';
 		src: url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff') format('woff'),
 		url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.ttf') format('truetype');
-	}
-</style>
-
-<script type='text/javascript'>
-	var initESW = function(gslbBaseURL) {
+	    }
+        </style>
+        <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+        <script type='text/javascript'>
+	        var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
@@ -35,17 +35,17 @@
 		embedded_svc.settings.entryFeature = 'FieldService';
 
 		embedded_svc.settings.useCustomAuthentication = false;
-		embedded_svc.settings.loginClientId = '3MVG9AOp4kbriZOK71vV55So1KB0OE1RkdiTQto46Ong9W1Yaie9H9jJ.o9gf9zjLqGz8MeziGhSwgXSr6R80';
+		embedded_svc.settings.loginClientId = '3MVG9n_HvETGhr3A5BM.59jlHTAdULk955E5YnJoOSGmWNwJIyPB36BpShW9PuDkN4s3S.Wd8GEq9fCeSH8Zu';
 		embedded_svc.settings.loginRedirectURL = 'https://ruchi2994.github.io/david-m2-snapin-callback.html';
 		embedded_svc.settings.loginTargetQuerySelector = '#salesforce-login';
 		embedded_svc.settings.authenticationStartLabel = 'Authenticated!';
 
 		embedded_svc.init(
-			'https://genericvisit.localhost.internal.salesforce.com:6101',
-			'https://fscthunderbolt.localhost.soma.force.com:6101',
+			'https://vmaheswara-20191113-demo.my.salesforce.com',
+			'https://sdodemo-main-166ce2cf6b6-16e6461bd85.force.com/thunderbolt',
 			gslbBaseURL,
-			'00Dxx0000001gHL',
-			'Inbound',
+			'00D2w000000D3pZ',
+			'Inbound_Scheduling',
 			{
 				
 			}
@@ -54,7 +54,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://genericvisit.localhost.internal.salesforce.com:6101/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://vmaheswara-20191113-demo.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
@@ -62,9 +62,8 @@
 	} else {
 		initESW('https://service.force.com');
 	}
-</script> 
-	    <div id="salesforce-login"></div>
-	
-	
-	</body>
+    </script>
+
+    <div id="salesforce-login"></div>
+    </body>
 </html>

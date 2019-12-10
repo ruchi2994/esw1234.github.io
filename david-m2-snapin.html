@@ -2,7 +2,7 @@
     <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     </head> 
-    <body onLoad=""setCookie()>
+    <body>
         <style type='text/css'>
 	    .embeddedServiceHelpButton .helpButton .uiButton {
 		    background-color: #005290;
@@ -19,10 +19,6 @@
         </style>
         <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
         <script type='text/javascript'>
-		
-		function setCookie() {
-		  document.cookie = "sid=00D2w000000D3pZ!AR4AQFQA0iu.cL.Eur7YsFpyzog2hnXJtFrQ.zWCevIOT5VV66fk_.799Val7KY4kyFukwdkwBney8aOxh0iKv_3OwqJnYLv; path=/; SameSite=None; Secure";
-		}
 			
 	        var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false

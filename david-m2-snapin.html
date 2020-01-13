@@ -66,36 +66,4 @@
 
     <div id="salesforce-login" style="top=50%;"></div>
     </body>
-	
-	<head>
-    <title>
-      Salesforce Lightnig Out Demo 
-    </title>
-  </head>
-  <body class="slds">
-    <header>
-    </header>
-    <main>
-      <div >
-        <p>Lightning Scheduler flow</p>
-        <div id="leaderboard"></div>
-          </div>
-      </main>
-        <footer>
-        </footer>
-        <script src="https://samesitetest-developer-edition.gus.force.com/lightning/lightning.out.js"></script>
-        <script>
-          //var url = "<%= ouathLightningURL %>";
-          //var token = "Bearer "+"<%= oauthtoken %>";
-          //console.log(token);
-            $Lightning.use("c:GuestFlow", function() {
-                  $Lightning.createComponent("lightning:flow", {},
-                     "leaderboard",
-                      function(cmp) {
-                         // do some stuff
-                         cmp.startFlow("GuestFlow");
-                      });
-            }, "https://samesitetest-developer-edition.gus.force.com/samesite");
-        </script>
-  </body>
 </html>

@@ -84,19 +84,19 @@
       </main>
         <footer>
         </footer>
-        <script src="http://ab13.lightning.localhost.soma.force.com:6109/lightning/lightning.out.js"></script>
+        <script src="https://fscmaster-community-1566ca07-16f6a0d0924.force.com/lightning/lightning.out.js"></script>
         <script>
           //var url = "<%= ouathLightningURL %>";
           //var token = "Bearer "+"<%= oauthtoken %>";
           //console.log(token);
-            $Lightning.use("c:flowApplication", function() {
+            $Lightning.use("c:GuestAppointment", function() {
                   $Lightning.createComponent("lightning:flow", {},
                      "leaderboard",
                       function(cmp) {
                          // do some stuff
-                         cmp.startFlow("guest_flow");
+                         cmp.startFlow("Guest_Appointment");
                       });
-            }, "http://ab13.localhost.soma.force.com:6109");
+            }, "https://fscmaster-community-1566ca07-16f6a0d0924.force.com");
         </script>
   </body>
 </html> 

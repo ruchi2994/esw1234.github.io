@@ -35,17 +35,17 @@
 		embedded_svc.settings.entryFeature = 'FieldService';
 
 		embedded_svc.settings.useCustomAuthentication = false;
-		embedded_svc.settings.loginClientId = '3MVG9SemV5D80oBeBTyozEw1oUXfFZm9DHFf8Q4RIBUQs3yFS4Z_Sj4uAz2ZnKNcEFgHPNLxgyAuc4cbenw5Q';
+		embedded_svc.settings.loginClientId = '3MVG9SemV5D80oBeoakT2iC8527GHWCbQu_kTD6vM4Afe4GFPHu7fxxTVsmAtdG5jMxIk44e1YcoOPEResb2B';
 		embedded_svc.settings.loginRedirectURL = 'https://ruchi2994.github.io/david-m2-snapin-callback.html';
 		embedded_svc.settings.loginTargetQuerySelector = '#salesforce-login';
 		embedded_svc.settings.authenticationStartLabel = 'Authenticated!';
 
 		embedded_svc.init(
-			'https://samesitetest-dev-ed.my.salesforce.com',
-			'https://samesitetest-developer-edition.gus.force.com/samesite',
+			'https://lightningscheduler32.lightning.force.com',
+			'https://fscmaster-community-1566ca07-16f6a0d0924.force.com/FSCCommunity',
 			gslbBaseURL,
-			'00DB0000000YPFn',
-			'Inbound_Scheduling',
+			'00DB0000000YQYF',
+			'Inbound_Test',
 			{
 				
 			}
@@ -54,7 +54,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://samesitetest-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://lightningscheduler32.lightning.force.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};

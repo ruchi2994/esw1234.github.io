@@ -90,11 +90,12 @@
           //var token = "Bearer "+"<%= oauthtoken %>";
           //console.log(token);
             $Lightning.use("c:GuestAppointment", function() {
-                  $Lightning.createComponent("lightning:flow", {},
+                  $Lightning.createComponent("c:Test", {},
                      "leaderboard",
                       function(cmp) {
                          // do some stuff
-                         cmp.startFlow("Guest_Appointment");
+                         //cmp.startFlow("Guest_Appointment");
+			  console.log('Component created, do something cool here');
                       });
             }, "https://fscmaster-community-1566ca07-16f6a0d0924.force.com");
         </script>

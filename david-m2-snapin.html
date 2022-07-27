@@ -159,7 +159,7 @@
           //var url = "<%= ouathLightningURL %>";
           //var token = "Bearer "+"<%= oauthtoken %>";
           //console.log(token);
-            $Lightning.use("c:GuestAppointment", function() {
+            $Lightning.use("runtime_appointmentbooking:lightningOutGuest", function() {
                   $Lightning.createComponent("lightning:flow", {},
                      "leaderboard",
                       function(cmp) {
